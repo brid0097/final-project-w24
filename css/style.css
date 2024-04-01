@@ -2,8 +2,96 @@
     box-sizing: border-box;
 }
 
+body {
+    font-family: poppins, sans-serif;
+    padding: 1em;
+    line-height: 1.4;
+    margin: 0;
+}
 
+.wrapper {
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+h1 {
+    font-size: 2.027rem;
+    font-weight: 500;
+}
+
+h2  {
+    font-size: 1.802rem;
+    font-weight: 800;
+}
+
+h3  {
+    font-size: 1.266rem;
+    font-weight: 700;
+}
 
 img {
     width: 100%;
+}
+
+header div {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+nav ul {
+    display: flex;
+    list-style: none;
+    text-transform: uppercase;
+    font-weight: 500;
+}
+
+nav a {
+    text-decoration: none;
+    padding: 0.25em 0.5em;
+    color: #000;
+}
+
+nav a:link,
+nav a:visited {
+    color: #000;
+}
+
+nav a:hover,
+nav a:focus {
+    background-color: #000;
+    color: #fff;
+}
+
+header div img {
+    width: 30%;
+}
+
+.pack {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(3 1fr);
+    gap: 1em;
+
+    grid-template-areas: 
+    "block1 block1 block1"
+    "block1 block1 block1"
+    "block2 block3 block4"
+    ;
+}
+
+.pack .block:nth-child(1) {
+    grid-area: block1;
+}
+
+.pack .block:nth-child(2) {
+    grid-area: block2;
+}
+
+.pack .block:nth-child(3) {
+    grid-area: block3;
+}
+
+.pack .block:nth-child(4) {
+    grid-area: block4;
 }
