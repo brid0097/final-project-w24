@@ -37,19 +37,21 @@ header div {
     display: flex;
     justify-content: space-between;
     align-items: center;
+    padding: 0 0 2em;
 }
 
 nav ul {
     display: flex;
     list-style: none;
     text-transform: uppercase;
-    font-weight: 500;
 }
 
 nav a {
     text-decoration: none;
     padding: 0.25em 0.5em;
     color: #000;
+    font-weight: 500;
+    font-size: 2rem;
 }
 
 nav a:link,
@@ -67,7 +69,7 @@ header div img {
     width: 30%;
 }
 
-.pack {
+.sweatheart {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
     grid-template-rows: repeat(3 1fr);
@@ -80,18 +82,47 @@ header div img {
     ;
 }
 
-.pack .block:nth-child(1) {
+.sweatheart .block:nth-child(1) {
     grid-area: block1;
 }
 
-.pack .block:nth-child(2) {
+.sweatheart .block:nth-child(2) {
     grid-area: block2;
 }
 
-.pack .block:nth-child(3) {
+.sweatheart .block:nth-child(3) {
     grid-area: block3;
 }
 
-.pack .block:nth-child(4) {
+.sweatheart .block:nth-child(4) {
     grid-area: block4;
+}
+
+.sweatheart img {
+    border-radius: 8px;
+}
+
+.limited {
+    font-weight: 700;
+    text-transform: uppercase;
+    font-size: 1rem;
+    margin-bottom: 0;
+}
+
+.velvet {
+    margin-top: 0;
+}
+
+.button {
+    display: inline-block;
+    text-decoration: none;
+    color: #fff;
+    background-color: #000;
+    border: 8px solid #000;
+    border-radius: 4px;
+    padding: 0 0.5em;
+}
+
+.dough {
+    background-color: #f8fafc;
 }
