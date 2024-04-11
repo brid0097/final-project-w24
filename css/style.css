@@ -4,7 +4,6 @@
 
 body {
     font-family: poppins, sans-serif;
-    padding: 1em;
     line-height: 1.4;
     margin: 0;
 }
@@ -12,6 +11,7 @@ body {
 .wrapper {
     max-width: 1200px;
     margin: 0 auto;
+    padding: 1em;
 }
 
 h1 {
@@ -31,6 +31,10 @@ h3  {
 
 img {
     width: 100%;
+}
+
+header .wrapper {
+    padding-bottom: 0;
 }
 
 header div {
@@ -124,12 +128,12 @@ header div img {
 }
 
 .sweetheart {
-    padding-bottom: 3em;
+    padding-bottom: 2em;
 }
 
 #dough {
     background-color: #f8fafc;
-    padding: 2.5em 0;
+    padding: 1.5em 0;
 }
 
 #dough div h2 {
@@ -146,7 +150,7 @@ header div img {
 #quotes div h2 {
     text-align: center;
     margin-top: 0;
-    padding-top: 1em;
+    padding-top: 0.5em;
 }
 
 #quotes div blockquote {
@@ -159,11 +163,12 @@ header div img {
 
 #try-it {
     text-align: center;
-    padding: 3em 0;
+    padding: 1.5em 0;
 }
 
 #try-it h2 {
     padding-bottom: 1em;
+    margin: 0;
 }
 
 .grid {
@@ -187,4 +192,46 @@ footer {
     color: #fff;
     text-align: center;
     padding: 2em 0;
+}
+
+@media (min-width: 768px) {
+
+    .sweet-pics {
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: 1fr 1fr;
+        gap: 1em;
+
+        grid-template-areas: 
+        "block1 block2"
+        "block3 block4"
+    ;
+    }
+
+    .behind-grid {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        gap: 2em;
+    }
+    
+    .spacing {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        gap: 2em;
+    }
+
+    .grid {
+        grid-template-columns: repeat(4, 1fr);
+    }
+}
+
+@media (min-width: 960px) {
+    .sweetheart {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        gap: 2.5em;
+    }
+
+    .block {
+        padding-bottom: 1.5em;
+    }
 }
