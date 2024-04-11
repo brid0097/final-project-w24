@@ -118,12 +118,13 @@ header div img {
 }
 
 .button {
-    display: inline-block;
     text-decoration: none;
     color: #fff;
     background-color: #000;
     border: 8px solid #000;
     border-radius: 4px;
+    
+    font-weight: 600;
     padding: 0 0.5em;
 }
 
@@ -222,16 +223,16 @@ footer {
     .grid {
         grid-template-columns: repeat(4, 1fr);
     }
+
+    nav a {
+        font-size: 1rem;
+    }
 }
 
 @media (min-width: 960px) {
     .sweetheart {
         display: grid;
         grid-template-columns: 1fr 1fr;
-        gap: 2.5em;
-    }
-
-    .block {
-        padding-bottom: 1.5em;
+        gap: 2em;
     }
 }
