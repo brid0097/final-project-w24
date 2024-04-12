@@ -6,6 +6,7 @@ body {
     font-family: poppins, sans-serif;
     line-height: 1.4;
     margin: 0;
+    color: #222;
 }
 
 .wrapper {
@@ -76,11 +77,9 @@ header div img {
 .sweet-pics {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
-    grid-template-rows: 2fr 1fr;
     gap: 1em;
 
     grid-template-areas: 
-    "block1 block1 block1"
     "block1 block1 block1"
     "block2 block3 block4"
     ;
@@ -124,7 +123,7 @@ header div img {
     border: 8px solid #000;
     border-radius: 4px;
     
-    font-weight: 600;
+    font-weight: 500;
     padding: 0 0.5em;
 }
 
@@ -154,12 +153,13 @@ header div img {
     padding-top: 0.5em;
 }
 
-#quotes div blockquote {
+#quotes article blockquote {
     margin: 0;
 }
 
-.spacing div {
+.spacing blockquote {
     padding-bottom: 2em;
+    margin: 0;
 }
 
 #try-it {
@@ -227,6 +227,10 @@ footer {
     nav a {
         font-size: 1rem;
     }
+
+    header div img {
+        width: 20%;
+    }
 }
 
 @media (min-width: 960px) {
@@ -234,5 +238,9 @@ footer {
         display: grid;
         grid-template-columns: 1fr 1fr;
         gap: 2em;
+    }
+
+    header div img {
+        width: 20%;
     }
 }
